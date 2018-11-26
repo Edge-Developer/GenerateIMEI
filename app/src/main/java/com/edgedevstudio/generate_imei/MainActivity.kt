@@ -31,7 +31,6 @@ import android.widget.Toast
 import com.codemybrainsout.ratingdialog.RatingDialog
 import com.edgedevstudio.generate_imei.Tabs.Tab1
 import com.edgedevstudio.generate_imei.Tabs.Tab2
-import com.edgedevstudio.generate_imei.Tabs.Tab3
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
@@ -55,7 +54,7 @@ import com.edgedevstudio.generate_imei.LanguageActivity.LANG_COUNTRY_CODE_KEY
 import com.edgedevstudio.generate_imei.LanguageActivity.LANG_SHORTCODE_KEY
 import com.edgedevstudio.generate_imei.R.id.*
 
-class MainActivity : AppCompatActivity(), Tab1.Callback, Tab2.Callback, Tab3.Callback, NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(), Tab1.Callback, Tab2.Callback, NavigationView.OnNavigationItemSelectedListener {
     private var mPagerAdapter: MyPagerAdapter? = null
     private lateinit var drawer: DrawerLayout
     private lateinit var mTabLayout: TabLayout
@@ -517,18 +516,6 @@ class MainActivity : AppCompatActivity(), Tab1.Callback, Tab2.Callback, Tab3.Cal
                 .threshold(4f)
                 .onRatingBarFormSumbit { feedback -> launchEmail("Rating FeedBack for IMEI Generator Lite", feedback) }.build()
         ratingDialog.show()
-    }
-
-    override fun clickedOneMonth() {
-
-    }
-
-    override fun clickedPermanent() {
-
-    }
-
-    override fun clickedRateApp() {
-        rateApp()
     }
 
     override fun clickedCopyBtn(s: String) {
