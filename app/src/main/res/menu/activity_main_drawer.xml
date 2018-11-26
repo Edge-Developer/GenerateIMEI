@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item
+        android:id="@+id/remove_ads_permanent"
+        android:icon="@drawable/ic_money"
+        android:title="@string/remove_ads" />-->
+    <item
+        android:id="@+id/rate_app"
+        android:icon="@drawable/ic_fav"
+        android:title="@string/rate_app"/>
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/ic_fb_messenger"
+        android:title="@string/contact_us"/>
+    <item
+        android:id="@+id/share_app"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share"/>
+    <item
+        android:id="@+id/telegram"
+        android:icon="@drawable/ic_telegram"
+        android:title="@string/join_telegram_group"/>
+    <item
+        android:id="@+id/fb_like"
+        android:icon="@drawable/ic_facebook"
+        android:title="@string/join_us_on_facebook" />
+    <item
+        android:title="@string/other_apps">
+        <menu>
+            <item
+                android:id="@+id/imei_gen"
+                android:icon="@drawable/ic_imei_gen"
+                android:title="@string/imei_generator"/>
+            <item
+                android:id="@+id/status_saver"
+                android:icon="@drawable/ic_whatsapp"
+                android:title="@string/status_saver"/>
+            <item
+                android:id="@+id/mutual_fund_calculator"
+                android:icon="@drawable/ic_calculator"
+                android:title="@string/mutual_fund_calculator"/>
+            <item
+                android:id="@+id/app_extractor"
+                android:icon="@drawable/ic_save"
+                android:title="@string/app_extractor"/>
+            <item
+                android:id="@+id/imei_checker"
+                android:icon="@drawable/ic_search"
+                android:title="@string/check_imei"/>
+            <item
+                android:id="@+id/root_checker"
+                android:icon="@drawable/ic_hashtag"
+                android:title="@string/root_checker"/>
+            <item
+                android:id="@+id/other_apps"
+                android:icon="@drawable/ic_apps"
+                android:title="@string/other_apps"/>
+        </menu>
+    </item>
+</menu>
